@@ -1,0 +1,42 @@
+body {
+  background-color: #4a1942;
+  margin: auto;
+  width: 60%;
+}
+input {
+  color: #050404;
+}
+section {
+  background-color: #2e1c2b;
+  color: #eaeaea;
+}
+.l-box {
+  padding: 1em;
+}
+
+legend {
+  font-size: 2em;
+  text-align: center;
+  color: #eaeaea;
+}
+.pure-button-primary {
+  margin: auto;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h4 {
+  text-align: center;
+  line-height: 2.5em;
+}
+
+footer, footer a {
+  text-align: center;
+  background-color: #2e1c2b;
+  font-size: 1.2em;
+  color: #eaeaea;
+}
