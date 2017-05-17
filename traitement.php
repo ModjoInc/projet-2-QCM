@@ -15,6 +15,7 @@
     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-2-4">
       <div class="l-box">
         <?php
+
         $Q1 = htmlentities($_POST['Q1']);
         $Q2 = htmlentities($_POST['Q2']);
         $Q3 = htmlentities($_POST['Q3']);
@@ -69,35 +70,72 @@
         echo '</div> <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-2-4"> ';
         echo "<br /><h4>Commentaires de l'examinateur : ";
 
-        switch ($bonnes_reponses) {
+         $comm ="";
+
+         switch ($bonnes_reponses) {
           case 0:
-          echo "<br /> Sérieux? </h4></div>";
+          $comm = "<br /> Sérieux? </h4></div>";
+          echo $comm;
           break;
           case 1:
           case 2:
           case 3:
           case 4:
-          echo "<br />erreur 404...</h4></div>";
+          $comm = "<br />erreur 404...</h4></div>";
+          echo $comm;
           break;
           case 5:
-          echo "<br />Tout juste la moyenne</h4></div>";
+          $comm = "<br />Tout juste la moyenne</h4></div>";
+          echo $comm;
           break;
           case 6:
           case 7:
-          echo "<br />c'est pas mal...pour un gosse de deuxième primaire</h4></div>";
+          $comm = "<br />c'est pas mal...pour un gosse de deuxième primaire</h4></div>";
+          echo $comm;
           break;
           case 8:
           case 9:
-          echo "<br /> Now we're talking...</h4></div>";
+          $comm = "<br /> Now we're talking...</h4></div>";
+          echo $comm;
           break;
           case 10:
-          echo "<br /> Merci à toi Chuck Norris</h4></div>";
+          $comm = "<br /> Merci à toi Chuck Norris</h4></div>";
+          echo $comm;
           break;
           default:
-          echo "<br /> ...</h4></div>";
+          $comm = "<br /> ...</h4></div>";
+          echo $comm;
           break;
         }
+
+      //validation mail et envoi
+        if (empty($_POST["email"])) {
+          $emailErr = "Vous devez nous donner votre email pour vous envoyer le score ;)";
+        } else {
+          $email = test_input($_POST["email"]);
+       // verif du format de l'email
+           if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+              $emailErr = "votre email n'est pas bien écrit!";
+           }
+       //envoi du mail
+           $to = "habibem@gmail.com," . $_POST["email"];
+           $subject = 'résultats de votre quizz';
+           $headers = 'Mime-Version: 1.0'."\r\n";
+           $headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
+           $headers .= "\r\n";
+           $message  = 'De: Becode <br />';
+           $message .= 'Email: ' . $_POST["email"] . '<br />';
+           $message .= 'Score au test : ' . $bonnes_reponses. "<br />";
+           $message .= "Commentaires de lévaluateur :<br />" . $comm . "<br />";
+           $envoi = mail($to, $subject, $message, $headers);
+
+          if ($envoi) {
+            echo 'Votre mail a bien été envoyé au support technique';
+          } else {
+            echo 'erreur lors de l\'envoi';
+          }
+        }
         ?>
-      </section>
+  </section>
 </body>
 </html>
