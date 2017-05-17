@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>PROJET QCM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+   <a href="test.html">lien vers grille</a>
+    <div class="pure-g">
+
+      <header class="pure-u-1">
+        <img class="pure-img" src="/img/quizz.png" alt="quizz becode">
+      </header>
+
+        <form class="pure-form pure-form-stacked pure-g" method="post" action="traitement.php">
+            <legend>thématique:culture  générale</legend>
+
+              <div class="pure-u-1-2">
+                <div class="l-box input-group margin-bottom-sm">
+                <h2>Données d'identification</h2>
+                  <label>Nom</label>
+                    <input name="nom" id="nom" type="text" placeholder="Nom">
+
+                  <label>Prénom</label>
+                    <input name="prenom" id="prenom" type="text" placeholder="Prénom">
+
+                  <label>Email</label>
+                      <input id="email" type="email" placeholder="Email">                      
+
+                  </div>
+              </div>
+
+
+              <div class="pure-u-1-2 pure-u-xs-1-2 pure-u-md-1-2">
+                <div class="l-box">
+                <h2>Questionnaire</h2>
+                  <label>Question 1: Où se trouvent les glandes sudoripares d'un chien?</label>
+                  <label for="q1A" class="pure-radio">
+                      <input id="q1A" type="radio" name="Q1" value="R1A"> Sous ses pattes
+                  </label>
+                  <label for="q1B" class="pure-radio">
+                      <input id="q1B" type="radio" name="Q1" value="R1B"> Sous son ventre
+                  </label>
+                  <label for="q1C" class="pure-radio">
+                      <input id="q1C" type="radio" name="Q1" value="R1C"> Sous sa queue
+                  </label>
+                  <hr />
+                  <label>Question 2 : Qui raconte les aventures de Sherlock Holmes ?</label>
+                  <label for="q2A" class="pure-radio">
+                      <input id="q2A" type="radio" name="Q2" value="R2A"> Sherlock Holmes
+                  </label>
+                  <label for="q2B" class="pure-radio">
+                      <input id="q2B" type="radio" name="Q2" value="R2B"> Watson
+                  </label>
+                  <label for="q2C" class="pure-radio">
+                      <input id="q2C" type="radio" name="Q2" value="R2C"> Moriarti
+                  </label>
+                  <hr />
+                  <label>Question 3 : Qui fut le quarantième président des USA ?</label>
+                  <label for="q3A" class="pure-radio">
+                      <input id="q3A" type="radio" name="Q3" value="R3A"> Obama
+                  </label>
+                  <label for="q3B" class="pure-radio">
+                      <input id="q3B" type="radio" name="Q3" value="R3B"> G.W. Bush
+                  </label>
+                  <label for="q3C" class="pure-radio">
+                      <input id="q3C" type="radio" name="Q3" value="R3C"> Reagan
+                  </label>
+                  <hr />
+                  <label>Question 4 : Comment appelle-t-on le versant Nord d'une vallee ?</label>
+                  <label for="q4A" class="pure-radio">
+                      <input id="q4A" type="radio" name="Q4" value="R4A"> L'ubac
+                  </label>
+                  <label for="q4B" class="pure-radio">
+                      <input id="q4B" type="radio" name="Q4" value="R4B"> L'adret
+                  </label>
+                  <label for="q4C" class="pure-radio">
+                      <input id="q4C" type="radio" name="Q4" value="R4C"> L'umbra
+                  </label>
+                  <hr />
+                  <label>Question 5 : Que signifie "Bistro" en russe ?</label>
+                  <label for="q5A" class="pure-radio">
+                      <input id="q5A" type="radio" name="Q5" value="R5A"> Boire
+                  </label>
+                  <label for="q5B" class="pure-radio">
+                      <input id="q5B" type="radio" name="Q5" value="R5B"> Vite
+                  </label>
+                  <label for="q5C" class="pure-radio">
+                      <input id="q5C" type="radio" name="Q5" value="R5C"> Rapide
+                  </label>
+                  <hr />
+                  <label>Question 6 : Combien y a-t-il de miles marins dans un degré de latitude ?</label>
+                  <label for="q6A" class="pure-radio">
+                      <input id="q6A" type="radio" name="Q6" value="R6A"> 60
+                  </label>
+                  <label for="q6B" class="pure-radio">
+                      <input id="q6B" type="radio" name="Q6" value="R6B"> 80
+                  </label>
+                  <label for="q6C" class="pure-radio">
+                      <input id="q6C" type="radio" name="Q6" value="R6C"> 40
+                  </label>
+                  <hr />
+                  <label>Question 7 : Qui a fondé l'Académie Française ?</label>
+                  <label for="q7A" class="pure-radio">
+                      <input id="q7A" type="radio" name="Q7" value="R7A"> Diderot
+                  </label>
+                  <label for="q7B" class="pure-radio">
+                      <input id="q7B" type="radio" name="Q7" value="R7B"> Victor Hugo
+                  </label>
+                  <label for="q7C" class="pure-radio">
+                    <hr />
+                  <label>Question 8 : Quel est le plus long fleuve d'Europe occidentale ?</label>
+                  <label for="q8A" class="pure-radio">
+                      <input id="q8A" type="radio" name="Q8" value="R8A"> Le Danube
+                  </label>
+                  <label for="q8B" class="pure-radio">
+                      <input id="q8B" type="radio" name="Q8" value="R8B"> Le Rhin
+                  </label>
+                  <label for="q8C" class="pure-radio">
+                      <input id="q8C" type="radio" name="Q8" value="R8C"> La Volga
+                  </label>
+                  <hr />
+                  <label>Question 9 : Qui est inséparable de Bonnie Parker ?</label>
+                  <label for="q9A" class="pure-radio">
+                      <input id="q9A" type="radio" name="Q9" value="R9A"> Jesse James
+                  </label>
+                  <label for="q9B" class="pure-radio">
+                      <input id="q9B" type="radio" name="Q9" value="R9B"> Clyde Barrow
+                  </label>
+                  <label for="q9C" class="pure-radio">
+                      <input id="q9C" type="radio" name="Q9" value="R9C"> John Wayne
+                  </label>
+                  <hr />
+                  <label>Question 10 : Qui est le dieu du Soleil dans l'ancienne Egypte ?</label>
+                  <label for="q10A" class="pure-radio">
+                      <input id="q10A" type="radio" name="Q10" value="R10A"> Râ
+                  </label>
+                  <label for="q10B" class="pure-radio">
+                      <input id="q10B" type="radio" name="Q10" value="R10B"> Anubis
+                  </label>
+                  <label for="q10C" class="pure-radio">
+                      <input id="q10C" type="radio" name="Q10" value="R10C"> Osiris
+                  </label>
+                </div>
+              </div>
+
+              <div class="pure-u-1">
+                <button type="submit" name="submit" class="pure-button pure-button-primary">Envoyer mes réponses</button>
+              </div>
+        </form>
+
+      <footer class="pure-u-1 pure-menu pure-menu-horizontal">
+        <div class="l-box">
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item"><i class="fa fa-chrome fa-3x"><a href="becode.org"></a></i></li>
+            <li class="pure-menu-item"><i class="fa fa-facebook fa-3x"><a href="facebook.com/becode"></a></i></li>
+            <li class="pure-menu-item"><i class="fa fa-github fa-3x"><a href="github.com/becodeorg"></a></i></li>
+            <li class="pure-menu-item"><i class="fa fa-twitter fa-3x"><a href="twitter.com/BecodeOrg"></a></i></li>
+          </ul>
+        </div>
+      </footer>
+
+   </div>
+  </body>
+</html>
