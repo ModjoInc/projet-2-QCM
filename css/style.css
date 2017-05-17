@@ -1,13 +1,9 @@
 body {
-  background-color: #4a1942;
-  margin: auto;
-  width: 60%;
-}
-input {
-  color: #050404;
-}
-section {
   background-color: #2e1c2b;
+  color: #eaeaea;
+}
+
+section {
   color: #eaeaea;
 }
 .l-box {
@@ -18,10 +14,18 @@ legend {
   font-size: 2em;
   text-align: center;
   color: #eaeaea;
+  letter-spacing: .2em;
+  word-spacing: .2em;
 }
+
+input {
+  color: #050404;
+}
+
 .pure-button-primary {
   margin: auto;
   width: 100%;
+  font-size: 2em;
 }
 
 img {
@@ -36,7 +40,5 @@ h4 {
 
 footer, footer a {
   text-align: center;
-  background-color: #2e1c2b;
-  font-size: 1.2em;
   color: #eaeaea;
 }
