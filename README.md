@@ -9,5 +9,5 @@ consignes:
     Faire de sorte que les deux QCM envoient les réponses au même fichier resultat.php.
     Ce même fichier resultat.php devra retourner une note selon les réponses pour les deux fichiers HTML
 
-(https://projet-2-qcm.herokuapp.com/QCM-1.php) lien vers pages Heroku
+[lien vers page Heroku](https://projet-2-qcm.herokuapp.com/QCM-1.php) 
 
