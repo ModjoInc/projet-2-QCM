@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <form id="form1" name="form1" class="pure-g pure-form pure-form-stacked" action="resultat.php" method="post">
+      <form id="form1" name="form1" class="pure-g pure-form pure-form-stacked" action="QCM-2.php" method="post">
         <input type="hidden" name="form1" value="">
         <div class="pure-u-1-2 pure-u-xs-1-2 pure-u-md-1-2">
           <div class="l-box">
