@@ -44,3 +44,20 @@ footer, footer a {
   text-align: center;
   color: #eaeaea;
 }
+
+h1 {
+  text-align: center;
+}
+
+.errors {
+  margin-left: 70%;
+  box-sizing: border-box;
+  word-break: break-all;
+  overflow: visible;
+  float: right;
+  position: fixed;
+  letter-spacing: 0em;
+  background-color: #a2a2a2;
+  color: #d6d6d6;
+  text-align: center;
+}
